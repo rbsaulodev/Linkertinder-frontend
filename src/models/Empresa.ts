@@ -1,11 +1,12 @@
 import { Pessoa } from './Pessoa';
 import { Candidato } from './Candidato';
-import { Loggable } from '../decorators/Loggable';
+import { Loggable } from '../utils/Loggable';
 
 export class Empresa extends Pessoa {
   cnpj: string = '';
   pais: string = '';
   candidatos: Candidato[] = [];
+  tags: string[] = [];
 
   constructor(data: Partial<Empresa> = {}) {
     super();

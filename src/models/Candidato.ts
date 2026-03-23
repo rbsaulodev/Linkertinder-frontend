@@ -1,9 +1,12 @@
 import { Pessoa } from './Pessoa';
-import { Loggable } from '../decorators/Loggable';
+import { Loggable } from '../utils/Loggable';
 
 export class Candidato extends Pessoa {
   cpf: string = '';
   idade: number = 0;
+  numbero: string = '';
+  linkedin: string = '';
+  tags: string[] = [];
 
   constructor(data: Partial<Candidato> = {}) {
     super();

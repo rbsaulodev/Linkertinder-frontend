@@ -1,7 +1,7 @@
 import { Candidato } from '../models/Candidato';
 import { Empresa } from '../models/Empresa';
 import { getDefaultCandidatos, getDefaultEmpresas } from '../data/data';
-import { Loggable } from '../decorators/Loggable';
+import { Loggable } from '../utils/Loggable';
 
 export class StorageService {
   private static readonly CANDIDATOS_KEY = 'linketinder_candidatos';
