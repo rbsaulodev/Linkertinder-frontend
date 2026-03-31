@@ -3,7 +3,6 @@ import { Empresa } from '../models/Empresa';
 import { StorageService } from './StorageService';
 import { showToast } from '../utils/UI';
 
-
 export function deleteCandidato(
   candidatos: Candidato[],
   idx: number,

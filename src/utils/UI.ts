@@ -89,7 +89,7 @@ export function renderEmpresas(
 
   grid.innerHTML = empresas.map((e, i) => `
     <div class="card">
-      <div class="card-anon" style="background:linear-gradient(135deg,#fc5c7d,#7c5cfc)">${e.nome.charAt(0)}</div>
+      <div class="card-anon">${e.nome.charAt(0)}</div>
       <div class="card-title">${e.nome}</div>
       <div class="card-sub">${e.pais} · ${e.estado} · CNPJ: ${e.cnpj}</div>
       <div class="card-desc">${e.descricao}</div>
@@ -105,7 +105,7 @@ export function renderEmpresas(
   });
 }
 
-// ─── Perfil Empresa ───────────────────────────────────────────────────────────
+//Perfil Empresa
 
 export function renderPerfilEmpresa(
   empresas: Empresa[],
